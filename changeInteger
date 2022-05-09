@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner (System.in);
+		int first_int;
+		int second_int;
+		System.out.print("birinci sayi:  ");
+		first_int=scanner.nextInt();
+		System.out.print("ikinci sayi: ");
+		second_int=scanner.nextInt();
+		System.out.print("değişmeden önceki sayılar...");
+		
+		System.out.println("ilk sayı : "+first_int);
+		System.out.println("ikinci sayı : "+second_int);
+		
+		
+		int gecici=first_int;
+		first_int=second_int;
+		second_int=gecici;
+		System.out.println("değiştikten sonraki sayılar...");
+		System.out.println("birinci sayi : "+first_int);
+		System.out.println("ikinci sayi : "+second_int);
+		
+		
+		
+	}
+
+}
