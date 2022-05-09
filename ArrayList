@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+
+public class Main {
+	public static void yazdir(ArrayList<String> a) {
+		for(int i=0;i<a.size();i++) {
+			System.out.println("Element "+(i+1)+":"+a.get(i));
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> arraylist=new ArrayList<String>();
+		arraylist.add("onurcan");
+		arraylist.add("senel");
+		arraylist.add("24");
+		arraylist.add("kultur university");
+		arraylist.add("onurcan");
+		
+		//array listi bastırmak için
+		/*
+		System.out.println(arraylist.get(0));
+		System.out.println(arraylist.get(1));
+		System.out.println(arraylist.get(2));
+		System.out.println(arraylist.get(3));
+		*/
+		//arraylistin boyutunu öğrenmek için size metodunu kullanırız.
+		//System.out.println(arraylist.size());
+		
+		//arraylistten eleman silme için: (iki şekildede remove metodunu kullanabiliriz.)
+		//arraylist.remove(1);//1. indexi silmemize yarar.
+		//arraylist.remove("onurcan");//onurcan stringini silmemize yarar.
+		
+		//indexof metodu ile kelimenin hangi indexte oldugunu öğreniriz.
+		/*
+		System.out.println(arraylist.indexOf("onurcan"));//arraylist.add iki adet onurcan var ve sadece 0. indexi verdi bunun sebebi en üstten baslayarak bilgi vermesidir.
+		System.out.println(arraylist.indexOf("kultur university"));
+		System.out.println(arraylist.lastIndexOf("onurcan"));
+		System.out.println(arraylist.indexOf("naber"));//naber stringi yukarıda add lenmediği için listede olmadıgından dolayı -1 şeklinde bastırılır.
+		*/
+		arraylist.set(4,"nasılsın");//set sayesinde indexi ve stringi yazarak güncelleme işlemi yapabiliriz.
+		/*
+		for(int i=0;i<arraylist.size();i++) {
+			System.out.println(arraylist.get(i));//for dongusu ile yazılabilir.
+		}
+		*/
+		yazdir(arraylist);
+		
+	}
+
+}
