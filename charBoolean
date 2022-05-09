@@ -1,0 +1,19 @@
+
+public class Main {
+	public static void main(String[] args) {
+		char a = 'A';
+		char b = '?';
+		//char c= '23';//yazılmaz cunku char içine karakter yazılır
+		char c = 2000;
+		char d= '\u01CA';
+		
+		System.out.println(d);
+		
+		boolean x=true;
+		boolean y=false;
+		System.out.println(x);
+		System.out.println(y);
+		
+	}
+
+}
