@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("sayiyi giriniz : ");
+		int sayi=scanner.nextInt();
+		System.out.println("basamak sayisi: ");
+		int basamaksayisi=scanner.nextInt();
+		
+		
+		int gecici_sayi=sayi;
+		int toplam=0;
+		
+		do {
+			int basamak_degeri=gecici_sayi %10;
+			gecici_sayi/=10;
+			
+			toplam+=Math.pow(basamak_degeri,basamaksayisi);
+			
+		}while(gecici_sayi>0);
+		if(sayi==toplam) {
+			System.out.println("bu sayı bir armstrong sayısıdır...");
+		}
+		else {
+			System.out.println("bu sayı bir armstrong sayısı degildir...");
+		}
+	}
+
+}
